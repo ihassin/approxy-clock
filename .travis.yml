@@ -5,7 +5,9 @@ compiler:
   - gcc
 
 script:
-script:
   - mkdir build
   - cd build
   - cmake .. && make
+
+notifications:
+  slack: panamaidentifier:25jcbNrzaW5W1Kcwl1dElSlE
