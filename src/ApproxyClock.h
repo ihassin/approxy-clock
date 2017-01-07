@@ -5,6 +5,7 @@ typedef struct ClockBlock {
 } ClockBlock;
 
 typedef enum {
+    NO_CLUE,
     A_LITTLE_PAST,
     A_LITTLE_BEFORE,
 } ClockApproximation;

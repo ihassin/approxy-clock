@@ -23,4 +23,5 @@ ClockApproximation clock_say_minutes(int minutes)
     {
         return A_LITTLE_BEFORE;
     }
+    return(NO_CLUE);
 }
