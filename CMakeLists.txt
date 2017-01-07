@@ -3,7 +3,7 @@ project(approxy_clock)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES
+set(SOURCE_TEST_FILES
         src/unity/unity.c
         src/unity/unity.h
         src/unity/unity_config.h
@@ -17,9 +17,15 @@ set(SOURCE_FILES
         test/test_runners/TestCanaryCode_Runner.c
         test/TestProductionCode.c
         test/TestCanary.c
+        src/ApproxyClock.c
+        src/ApproxyClock.h
         )
 
-set(SOURCE_FILES1 src/main.c src/main.h)
+set(SOURCE_PROD_FILES
+        src/main.c
+        src/main.h
+        src/ApproxyClock.c
+        src/ApproxyClock.h)
 
 include_directories(.)
 include_directories(src)
@@ -27,5 +33,5 @@ include_directories(src/unity)
 include_directories(test)
 include_directories(test/test_runners)
 
-add_executable(approxy_clock ${SOURCE_FILES1})
-add_executable(approxy_clock_tests ${SOURCE_FILES})
+add_executable(approxy_clock_tests ${SOURCE_TEST_FILES})
+add_executable(approxy_clock ${SOURCE_PROD_FILES})

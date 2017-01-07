@@ -15,7 +15,9 @@ TEST_TEAR_DOWN(ProductionCode)
 {
 }
 
-TEST(ProductionCode, ProdTest1)
+TEST(ProductionCode, SaysALittleAfter)
 {
-    TEST_ASSERT(0 == 0);
+    ClockBlock *clockBlock = clock_init();
+
+    TEST_ASSERT(clock_say_minutes(4) == CLOCK_A_LITTLE_PAST);
 }
