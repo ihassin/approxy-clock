@@ -47,3 +47,4 @@ fabric.properties
 
 cmake-build-debug/**
 _build/**
+build/**
