@@ -3,6 +3,7 @@
 static void RunAllTests(void)
 {
     RUN_TEST_GROUP(CanaryCode);
+    RUN_TEST_GROUP(DriverCode);
     RUN_TEST_GROUP(ProductionCode);
 }
 

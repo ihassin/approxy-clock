@@ -4,8 +4,8 @@
 #include "ApproxyClock.h"
 #endif
 
-#define CLOCK_A_LITTLE_PAST_THRESHOLD       5
-#define CLOCK_A_LITTLE_BEFORE_THRESHOLD     56
+#define A_LITTLE_PAST_THRESHOLD       5
+#define A_LITTLE_BEFORE_THRESHOLD     56
 
 ClockBlock *clock_init()
 {
@@ -14,12 +14,12 @@ ClockBlock *clock_init()
 
 ClockApproximation clock_say_minutes(int minutes)
 {
-    if(minutes <= CLOCK_A_LITTLE_PAST_THRESHOLD)
+    if(minutes <= A_LITTLE_PAST_THRESHOLD)
     {
         return A_LITTLE_PAST;
     }
 
-    if(minutes >= CLOCK_A_LITTLE_BEFORE_THRESHOLD)
+    if(minutes >= A_LITTLE_BEFORE_THRESHOLD)
     {
         return A_LITTLE_BEFORE;
     }
