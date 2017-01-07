@@ -2,7 +2,8 @@
 
 static void RunAllTests(void)
 {
-  RUN_TEST_GROUP(ProductionCode);
+    RUN_TEST_GROUP(CanaryCode);
+    RUN_TEST_GROUP(ProductionCode);
 }
 
 int main(int argc, const char * argv[])

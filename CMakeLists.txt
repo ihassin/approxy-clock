@@ -14,7 +14,9 @@ set(SOURCE_FILES
         src/unity/unity_internals.h
         test/test_runners/all_tests.c
         test/test_runners/TestProductionCode_Runner.c
+        test/test_runners/TestCanaryCode_Runner.c
         test/TestProductionCode.c
+        test/TestCanary.c
         )
 
 set(SOURCE_FILES1 src/main.c src/main.h)

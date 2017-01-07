@@ -15,7 +15,7 @@ cmake ..
 ```
 ## Tests
 
-Use [Unity]() as the framework. Run them from ./approxy_clock_tests
+Use [Unity](http://www.throwtheswitch.org/unity/) as the framework. Run them from ./approxy_clock_tests
 
 ## Code
 
@@ -28,4 +28,3 @@ Will simulate the LEDs lighting up.
 # Hardware
 
 Will use [WS2812B](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf), and will need to be wired up in serial behind the clock's face.
-

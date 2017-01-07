@@ -5,17 +5,17 @@
 
 #include "main.h"
 
-TEST_GROUP(ProductionCode);
+TEST_GROUP(CanaryCode);
 
-TEST_SETUP(ProductionCode)
+TEST_SETUP(CanaryCode)
 {
 }
 
-TEST_TEAR_DOWN(ProductionCode)
+TEST_TEAR_DOWN(CanaryCode)
 {
 }
 
-TEST(ProductionCode, ProdTest1)
+TEST(CanaryCode, CanaryTest)
 {
     TEST_ASSERT(0 == 0);
 }
