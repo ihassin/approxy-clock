@@ -15,8 +15,9 @@ set(SOURCE_FILES
         test/test_runners/all_tests.c
         test/test_runners/TestProductionCode_Runner.c
         test/TestProductionCode.c
-        src/main.c
-        src/main.h)
+        )
+
+set(SOURCE_FILES1 src/main.c src/main.h)
 
 include_directories(.)
 include_directories(src)
@@ -24,4 +25,5 @@ include_directories(src/unity)
 include_directories(test)
 include_directories(test/test_runners)
 
-add_executable(approxy_clock ${SOURCE_FILES})
+add_executable(approxy_clock ${SOURCE_FILES1})
+add_executable(approxy_clock_tests ${SOURCE_FILES})
