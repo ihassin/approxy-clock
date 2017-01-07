@@ -5,9 +5,9 @@ typedef struct ClockBlock {
 } ClockBlock;
 
 typedef enum {
-    CLOCK_A_LITTLE_PAST,
+    A_LITTLE_PAST,
+    A_LITTLE_BEFORE,
 } ClockApproximation;
-
 
 ClockBlock *clock_init();
 ClockApproximation clock_say_minutes(int minutes);

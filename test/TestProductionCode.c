@@ -19,5 +19,12 @@ TEST(ProductionCode, SaysALittleAfter)
 {
     ClockBlock *clockBlock = clock_init();
 
-    TEST_ASSERT(clock_say_minutes(4) == CLOCK_A_LITTLE_PAST);
+    TEST_ASSERT(clock_say_minutes(4) == A_LITTLE_PAST);
+}
+
+TEST(ProductionCode, SaysALittleBefore)
+{
+    ClockBlock *clockBlock = clock_init();
+
+    TEST_ASSERT(clock_say_minutes(56) == A_LITTLE_BEFORE);
 }
