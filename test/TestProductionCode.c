@@ -1,9 +1,9 @@
-#include <assert.h>
-
 #include "unity.h"
 #include "unity_fixture.h"
 
+#ifndef __MAIN_H__
 #include "main.h"
+#endif
 
 TEST_GROUP(ProductionCode);
 

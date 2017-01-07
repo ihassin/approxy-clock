@@ -1,9 +1,5 @@
-#include <assert.h>
-
 #include "unity.h"
 #include "unity_fixture.h"
-
-#include "main.h"
 
 TEST_GROUP(CanaryCode);
 
