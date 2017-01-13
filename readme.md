@@ -15,7 +15,7 @@ cmake ..
 ```
 ## Tests
 
-Use [Unity](http://www.throwtheswitch.org/unity/) as the framework. Run them from ./approxy_clock_tests
+Uses [Unity](http://www.throwtheswitch.org/unity/) as the framework. Run them from ./approxy_clock_tests
 
 ## Code
 
@@ -24,6 +24,7 @@ Will be written for [Arduino](https://www.arduino.cc/), so will need to be uploa
 ## Simulator
 
 Will simulate the LEDs lighting up.
+Run it from ./approxy_clock
 
 # Hardware
 
